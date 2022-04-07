@@ -1,48 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KaiMart</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="app.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KaiMart</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="app.css" />
 </head>
+
 <body>
-    
-<nav class="navigation">
+  <nav class="top-nav">
+    <div class="inner-nav">
+      <a href="#">Online & Store Services</a>
+      <a href="#">Get support</a>
+      <a href="#">Store locator</a>
+      <a href="#">Order status</a>
+      <a href="#">Log in/Register</a>
+      <a class="top-nav-link" href="#">
+        <img src="images/profile.svg" alt="" />
+        Account</a>
+      <a class="top-nav-link" href="#"><img src="images/shopping-cart.svg" width="20" alt="" />Cart</a>
+    </div>
+  </nav>
+
+  <nav class="navigation">
+    <input class="side-menu" type="checkbox" id="side-menu" />
+    <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
     <div>
-        <img class="logo" width="100" src="/images/kaimart-logo.png" alt="">
+      <img class="logo" width="85" src="/images/kaimart-logo.png" alt="" />
     </div>
     <div class="nav-links">
-        <a href="#">What's New</a>
-        <a href="#">Men</a>
-        <a href="#">Women</a>
-        <a href="#">Kids</a>
-        <a href="#">Jewelry</a>
-        <a href="#">Handbags</a>
-        <a href="#">Shoes</a>
-        <a href="#">Beauty</a>
-        <a href="#">Kitchen</a>
+      <a href="#">What's New</a>
+      <a href="#">Men</a>
+      <a href="#">Women</a>
+      <a href="#">Kids</a>
+      <a href="#">Jewelry</a>
+      <a href="#">Handbags</a>
+      <a href="#">Shoes</a>
+      <a href="#">Beauty</a>
     </div>
-    <div>
-       <div class="search-container flex-center">
-            <label for="search">Search</label>
-        <input id="search" name="seach" type="text">
-      <div><img src="images/search.svg" width="20px" alt=""></div>
+    <div class="search-container flex-center">
+      <input id="search" name="seach" type="text" placeholder="Search" />
     </div>
+    <div class="account-container">
+      <a class="top-nav-link" href="#">
+        <img src="images/profile.svg" alt="" />
+        Account</a>
+      <a class="top-nav-link" href="#">
+        <img src="images/shopping-cart.svg" width="20" alt="" />
+        Cart</a>
     </div>
-    <div class="checkout-container flex-center">
-        <img src="images/shopping-cart.svg" width="35" alt="">
-        <div>
-         <img src="images/profile.svg" width="35" alt="">
-        </div>
-    </div>
-</nav>
-
-
-
+  </nav>
 </body>
+
 </html>
