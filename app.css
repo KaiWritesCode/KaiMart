@@ -23,11 +23,17 @@ h2 {
     margin: 1.4rem 0;
 }
 
+h3 {
+    margin: 0.75rem 0;
+    font-size: 1.3rem;
+}
+
 .container {
     max-width: 1400px;
     margin: 0 auto;
     width: 100%;
-    padding: 1rem;
+    padding: 1rem 2rem;
+    padding-top: 0;
 }
 
 /* global style for centering  */
@@ -67,7 +73,7 @@ h2 {
     border-radius: 8px;
     display: flex;
     height: 44px;
-    margin: 0px;
+    margin-left: 30px;
     padding: 0 12px;
 }
 
@@ -108,7 +114,7 @@ h2 {
 
 
 .top-nav {
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(193, 53, 53);
 }
 
 .inner-nav {
@@ -127,10 +133,12 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #ffffff;
+
 }
 
 .top-nav a:hover {
-    background-color: rgb(199, 199, 199);
+    background-color: rgb(148, 27, 27);
 }
 
 .top-nav-link {
@@ -146,6 +154,10 @@ h2 {
 .collapsed-sidemenu,
 .account-container {
     display: none;
+}
+
+#acc-icon img {
+    filter: invert(100%) sepia(0%) saturate(4507%) hue-rotate(67deg) brightness(109%) contrast(101%);
 }
 
 /* Menu Icon */
@@ -208,9 +220,6 @@ h2 {
     top: 0;
 }
 
-.collapsed-sidemenu {
-    display: none;
-}
 
 
 .flex-col b {
@@ -221,24 +230,72 @@ h2 {
     margin: 1rem 2rem
 }
 
+.two-col {
+    position: relative;
+}
+
+.two-col img {
+    width: 700px;
+    padding: 0 1rem 2rem;
+}
+
+.center-box {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(255, 255, 255, 0.823);
+    text-align: center;
+    padding: 1rem;
+}
+
+.center-box h2 {
+    font-size: 4rem;
+    font-weight: 600;
+    margin: 0.8rem 0;
+}
+
+.center-box strong {
+    font-size: 2rem;
+}
+
+.center-box p {
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.style-box {
+    width: 330px;
+    margin: 0 1rem;
+}
+
+.three-col {
+    justify-content: space-evenly;
+}
+
 /* Hide checkbox */
 
 @media screen and (max-width: 1024px) {
     .navigation {
         justify-content: flex-start;
+        flex-wrap: wrap;
     }
 
-    .side-menu:checked~.collapsed-sidemenu {
+    .side-menu:checked~.nav-links {
         max-height: 100%;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
         flex-direction: column;
-        width: 100%;
+        width: 100vw;
+        font-size: 1.2rem;
+        margin: 1rem 0;
     }
 
     .nav-links {
         display: none;
+    }
+
+    .nav-links a {
+        margin: 8px 0;
     }
 
     #acc-icon {
@@ -250,24 +307,24 @@ h2 {
         display: block;
     }
 
-
-    .account-container {
-        display: flex;
-        justify-content: space-around;
+    .search-container {
+        width: 55vw;
+        margin: 0 2rem 0 auto;
     }
+
+
+}
+
+@media screen and (max-width: 778px) {}
+
+@media screen and (max-width: 500px) {
 
     .search-container {
         width: 100%;
-        margin: 0 2rem;
-    }
-}
-
-@media screen and (max-width: 778px) {
-    .search-container {
-        margin: 0 0.75rem;
+        margin: 0
     }
 
-    .account-container {
-        display: none;
+    .navigation {
+        justify-content: space-between;
     }
 }
