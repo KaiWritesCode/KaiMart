@@ -25,7 +25,7 @@ h2 {
 
 h3 {
     margin: 0.75rem 0;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
 }
 
 .container {
@@ -104,7 +104,7 @@ h3 {
     opacity: 1;
     transition: opacity 200ms ease-in 0s;
     border-radius: 8px;
-    background-image: url(images/search.svg);
+    background-image: url(images/icons/search.svg);
     background-size: 20px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -265,10 +265,69 @@ h3 {
 .style-box {
     width: 330px;
     margin: 0 1rem;
+    align-items: flex-start;
 }
 
 .three-col {
     justify-content: space-evenly;
+}
+
+
+
+
+
+/* footer  */
+
+footer {
+    width: 100%;
+    background-color: rgb(64, 59, 59);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    max-width: 1300px;
+    width: 100%;
+}
+
+.footer a {
+    color: white;
+
+}
+
+.footer-social-icons a img {
+    width: 25px;
+    margin-right: 8px;
+    filter: invert(100%) sepia(0%) saturate(4507%) hue-rotate(67deg) brightness(109%) contrast(101%);
+}
+
+.footer-text {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-text a {
+    margin: 0 8px;
+    font-size: 0.75rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer-social-icons {
+        margin-bottom: 10px;
+    }
+
+    .footer-text a {
+        margin-bottom: 8px;
+    }
 }
 
 /* Hide checkbox */
