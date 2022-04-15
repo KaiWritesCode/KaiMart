@@ -8,32 +8,34 @@
     justify-content: center;
 }
 
-.men-box {
+.product-box {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 2.5rem 1rem;
+    width: 300px;
+    text-align: center;
 }
 
-.men-box h3 {
+.product-box h3 {
     font-size: 1.8rem;
     margin: 18px 0 8px;
 }
 
-.men-box .subhead {
+.product-box .subhead {
     margin-bottom: 8px;
 }
 
-.men-box .price {
+.product-box .price {
     font-size: 1.7rem;
     margin: 0 0 6px;
 }
 
-.men-box .compare {
+.product-box .compare {
     font-size: 0.895rem;
 }
 
-.men-box img {
+.product-box img {
     width: 280px
 }
 
@@ -69,13 +71,13 @@
 @media screen and (max-width: 778px) {
 
 
-    .men-box {
+    .product-box {
         margin: 2rem;
         width: 200px;
         text-align: center;
     }
 
-    .men-box h3 {
+    .product-box h3 {
         font-size: 1rem;
     }
 
