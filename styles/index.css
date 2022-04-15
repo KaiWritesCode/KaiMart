@@ -1,0 +1,149 @@
+h2 {
+    font-size: 2.2rem;
+    margin: 1.4rem 0;
+}
+
+h3 {
+    margin: 0.75rem 0;
+    font-size: 1.6rem;
+}
+
+
+
+section {
+    margin-bottom: 5em;
+}
+
+/* global style for centering  */
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.flex-col b {
+    font-size: 1.4rem;
+}
+
+.circles .flex-col {
+    margin: 1rem 2rem;
+}
+
+
+
+.two-col {
+    position: relative;
+}
+
+.two-col img {
+    width: 700px;
+    padding: 0 1rem 2rem;
+}
+
+.center-box {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(255, 255, 255, 0.823);
+    text-align: center;
+    padding: 1rem;
+}
+
+.center-box h2 {
+    font-size: 4rem;
+    font-weight: 600;
+    margin: 0.8rem 0;
+}
+
+.center-box strong {
+    font-size: 2rem;
+}
+
+.center-box p {
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.style-box {
+    width: 330px;
+    margin: 0 1rem;
+    align-items: flex-start;
+}
+
+.three-col {
+    justify-content: space-evenly;
+    flex-wrap: wrap
+}
+
+
+@media screen and (max-width: 1200px) {
+    .three-col .style-box {
+        width: 250px;
+    }
+
+    .three-col .style-box h3 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Hide checkbox */
+
+
+
+@media screen and (max-width: 778px) {
+    .three-col .style-box {
+        width: 100%;
+        margin-bottom: 25px;
+        align-items: center;
+    }
+
+    .circles {
+        flex-wrap: wrap;
+    }
+
+    .circles .flex-col {
+        margin: 1rem;
+    }
+
+    .circles img {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .two-col .center-box {
+        padding: 0.5rem;
+        font-size: 0.7em;
+    }
+
+    .two-col .center-box h2 {
+        font-size: 2rem
+    }
+
+    .two-col .center-box strong {
+        font-size: 1rem
+    }
+
+    .circles img {
+        width: 70px;
+    }
+
+    .inner-nav {
+        display: none;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    section {
+        margin: 1rem 0;
+    }
+}
