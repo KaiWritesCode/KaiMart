@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="../styles/app.css">
+    <link rel="stylesheet" href="../styles/signin.css">
+</head>
+
+<body>
+    <div class="page-bod">
+        <nav class="top-nav">
+            <div class="inner-nav">
+                <a href="#">Online & Store Services</a>
+                <a href="#">Get support</a>
+                <a href="#">Store locator</a>
+                <a href="#">Order status</a>
+                <a href="">Log in/Register</a>
+                <a class="top-nav-link" id="acc-icon" href="#">
+                    <img src="images/icons/profile.svg" alt="" />
+                    Account</a>
+                <a class="top-nav-link" id="acc-icon" href="#"><img src="images/icons/shopping-cart.svg" width="20"
+                        alt="" />Cart</a>
+            </div>
+        </nav>
+
+        <nav class="navigation">
+            <input class="side-menu" type="checkbox" id="checkbox" />
+            <label class="hamb" for="checkbox"><span class="hamb-line"></span></label>
+            <a href="/">
+                <img class="logo" src="/images/icons/kaimart-logo.png" alt="" />
+            </a>
+
+            <div class="search-container flex-center">
+                <input id="search" name="seach" type="text" placeholder="Search" />
+                <button>go</button>
+
+            </div>
+
+            <div class="nav-links">
+                <a href="/html/new.html">What's New</a>
+                <a href="/html/men.html">Men</a>
+                <a href="/html/women.html">Women</a>
+                <a href="/html/kids.html">Kids</a>
+                <a href="/html/kitchen.html">Kitchen</a>
+                <a href="/html/furniture.html">Furniture</a>
+                <a href="/html/shoes.html">Shoes</a>
+                <a href="/html/pets.html">Pets</a>
+            </div>
+        </nav>
+
+
+        <section class="signup-container">
+            <div class="col-container">
+                <div class="left-col">
+                    <img class="cover-modal" src="/images/new/test.webp" alt="">
+                </div>
+
+                <div class="right-col">
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input class="form-control" type="text" name="username" id="username"
+                                placeholder="james.bond" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input class="form-control" type="text" name="email" id="email"
+                                placeholder="james.bond@spectre.com" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input class="form-control" type="password" name="password" id="password"
+                                placeholder="********" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordRepeat">Repeat Password</label>
+                            <input class="form-control" type="password" name="passwordRepeat" id="passwordRepeat"
+                                placeholder="********" required />
+                        </div>
+                        <div class="m-t-lg">
+                            <ul class="list-inline">
+                                <li>
+                                    <input class="btn btn--form" type="submit" value="Register" />
+                                </li>
+                                <li>
+                                    <a class="signup__link" href="#">I am already a member</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="signup__overlay"></div>
+    </div>
+    </section>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-social-icons">
+                <a href="#"><img src="images/icons/facebook-brands.svg" alt=""></a>
+                <a href="#"><img src="images/icons/instagram-brands.svg" alt=""></a>
+                <a href="#"><img src="images/icons/youtube-brands.svg" alt=""></a>
+                <a href="#"><img src="images/icons/pinterest-brands.svg" alt=""></a>
+                <a href="#"><img src="images/icons/tiktok-brands.svg" alt=""></a>
+                <a href="#"><img src="images/icons/twitter-brands.svg" alt=""></a>
+            </div>
+            <div class="footer-text flex-center">
+                <a href="#">Terms</a>
+                <a href="#">CA Supply Chain</a>
+                <a href="#">Privacy</a>
+                <a href="">CA Privacy Rights</a>
+                <a href="#">Do Not Sell My Personal Information</a>
+                <a href="#"> Interest Based Ads</a>
+                <a href="#"> TM & © 2022 Target Brands, Inc.</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
